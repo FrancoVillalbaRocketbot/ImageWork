@@ -35,6 +35,7 @@ cur_path = base_path + 'modules' + os.sep + 'ImageWork' + os.sep + 'libs' + os.s
 sys.path.append(cur_path)
 
 from PIL import Image
+import PIL
 import numpy as np
 import cv2
 import imutils
@@ -225,6 +226,20 @@ if module == "cropImage":
         size = eval(size)
         pdf_im = Image.open(image_path)
         pdf_im.crop(coord + size).save(path)
+    except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
+        PrintException()
+        raise e
+
+if module == "rotateImage":
+    image_path = GetParams("image")
+    path = GetParams("path")
+    angle = GetParams("angle")
+
+    try:
+        img = Image.open(image_path)
+        img = img.rotate(int(angle), PIL.Image.NEAREST, expand = 1)
+        img.save(path)
     except Exception as e:
         print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
