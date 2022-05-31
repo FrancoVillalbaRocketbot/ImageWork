@@ -59,8 +59,8 @@ Extrae el texto de un área específica de una imagen
 Corta una imagen desde coordenadas
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
-|Imagen de entrada||/ruta/a/imagen.png|
-|Path y nombre de archivo JPG||JPG|
+|Imagen de entrada JPG o PNG:||/ruta/a/imagen.png|
+|Path y nombre de imagen nueva:||/ruta/a/imagenNueva.png|
 |Coordenadas||x,y|
 |Dimensiones||width, height|
 
