@@ -443,14 +443,9 @@
               "pr": "/caminho/para/imagem.png"
             },
             "title": {
-              "es": "Imagen de entrada:",
-              "en": "Input image:",
-              "pr": "Imagem de entrada:"
-            },
-            "help": {
-              "es": "Path donde se encuentra el PDF a convertir",
-              "en": "Path where the PDF is located",
-              "pr": "Caminho onde se encontra o PDF a converter"
+              "es": "Imagen de entrada JPG o PNG:",
+              "en": "Input image JPG or PNG:",
+              "pr": "Imagem de entrada JPG ou PNG:"
             },
             "id": "image",
             "css": "col-md-12"
@@ -458,14 +453,14 @@
           {
             "type": "file_new",
             "placeholder": {
-              "es": "JPG",
-              "en": "JPG",
-              "pr": "JPG"
+              "es": "/ruta/a/imagenNueva.png",
+              "en": "/path/to/new_image.png",
+              "pr": "/caminho/para/imagemNova.png"
             },
             "title": {
-              "es": "Path y nombre de archivo JPG",
-              "en": "Path and name of JPG file",
-              "pr": "Caminho e nome do arquivo JPG"
+              "es": "Path y nombre de imagen nueva:",
+              "en": "Path and name of new image:",
+              "pr": "Caminho e nome da nova imagem:"
             },
             "id": "path",
             "css": "col-md-12"
